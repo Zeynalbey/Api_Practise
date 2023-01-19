@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebApplication4.Database.Model
+{
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public DateTime dateTime { get; set; }
+
+        public int? CategoryId { get; set; }
+        public Category Category { get; set; }
+
+        public List<ProductImage> Images { get; set; }
+    }
+}
